@@ -1,0 +1,240 @@
+
+     
+      .service-card {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .hidden { display: none; }
+        .icon-box {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .icon-box i {
+            font-size: 4rem;
+            color: red;
+            margin-bottom: 15px;
+        }
+        .icon-box p {
+            color: blue;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .icon-box a {
+            text-decoration: none;
+        }
+        .icon-box p.description {
+    color: black;
+    font-size: 1rem;
+}
+.custom-icon-box {
+            border-radius: 10px;
+            padding: 20px; 
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .custom-icon-box i {
+            font-size: 4rem; /* تم تكبير حجم الأيقونات للضعف */
+            margin-bottom: 10px;
+        }
+        .custom-icon-box p {
+            font-size: 1rem;
+            margin: 0;
+        }
+        .gold-bg {
+            background-color: gold;
+        }
+        .green-bg {
+            background-color: green;
+        }
+        .custom-icon-box a {
+            text-decoration: none;
+            color: white;
+        }
+        .contact-icons {
+            position: fixed; /* تجعل الأيقونات ثابتة */
+    left: 50%; /* مركز الأيقونات أفقياً */
+    transform: translateX(-50%); /* محاذاة الأيقونات في المنتصف */
+    bottom: 20px; /* المسافة من الأسفل */
+    z-index: 9999; /* للتأكد من ظهور الأيقونات فوق أي محتوى آخر */
+}
+
+.social-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+        .social-box i {
+            font-size: 40px;
+            color: #fff;
+        }
+        .fb-bg { background-color: #3b5998; }
+        .insta-bg { background-color: #C13584; }
+        .wa-bg { background-color: #25D366; }
+        .tiktok-bg { background-color: #010101; }
+        .social-box:hover {
+            transform: scale(1.1);
+        }
+        .vv{
+            width: 150px;
+        }
+        @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+
+@keyframes shake {
+    0% { transform: translateY(0) scale(1); }
+    25% { transform: translateY(-30px) scale(2); }
+    50% { transform: translateY(30px) scale(2); }
+    75% { transform: translateY(-30px) scale(2); }
+    100% { transform: translateY(0) scale(2); }
+}
+.phone-icon {
+    position: fixed;
+    bottom: 20px;  /* تثبيت الأيقونة في الأسفل */
+    right: 30px;   /* تحريك الأيقونة 30 بكسل إلى اليمين */
+    color: gold;
+    animation: shake 2s ease-in-out infinite; /* اهتزاز كل ثانيتين */
+    font-size: 40px; /* حجم الأيقونة مضاعف */
+}
+/* تنسيق العنوان الأول */
+.title1 {
+  font-size: 24px; /* حجم الخط للعناوين */
+  color: #FFD700; /* لون ذهبي */
+  font-weight: bold;
+  line-height: 1.5; /* ارتفاع السطر لضمان عرض النص بأسطر متعددة */
+  text-align: center; /* محاذاة العنوان في المنتصف */
+}
+
+.text1 {
+  font-size: 16px; /* حجم الخط للنص */
+  color: #333; /* لون النص الأساسي */
+  line-height: 1.6; /* لضمان قراءة مريحة وتوزيع الأسطر */
+}
+
+/* تنسيق العنوان الثاني */
+.title2 {
+  font-size: 24px;
+  color: #FF6347; /* لون برتقالي فاتح */
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.text2 {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* تنسيق عام لجعل النصوص ملائمة على شاشة الهاتف */
+@media (max-width: 576px) {
+  .text1, .text2 {
+    font-size: 14px; /* تصغير حجم الخط للنصوص على الشاشات الصغيرة */
+  }
+  .title1, .title2 {
+    font-size: 20px; /* تصغير حجم العناوين على الشاشات الصغيرة */
+  }
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* لضمان بقاء الـnavbar فوق جميع العناصر */
+  }
+  @media (max-width: 768px) {
+    .row {
+      display: block;
+    }
+  }
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.8;
+      background-color: #f4f4f4;
+      padding: 20px;
+  }
+  .main-title {
+      color: #007bff; /* لون العنوان الرئيسي */
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  .subtitle {
+      color: #28a745; /* لون العناوين الفرعية */
+      font-size: 28px;
+      margin-bottom: 15px;
+  }
+  .paragraph {
+      color: #333; /* لون النص */
+      font-size: 18px;
+      text-align: justify;
+      margin-bottom: 15px;
+  }
+  .highlight {
+      color: #ff5733; /* لون مميز لبعض الكلمات */
+      font-weight: bold;
+  }
+  /* تنسيق الفوتر */
+.footer {
+padding: 20px 0;
+background-color: #343a40; /* لون داكن للفوتر */
+color: #fff; /* النص باللون الأبيض */
+}
+
+/* تنسيق النصوص داخل الفوتر */
+.footer h5 {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.footer p {
+font-size: 14px;
+margin-bottom: 0;
+}
+
+/* تنسيق الروابط الاجتماعية */
+.social-links li {
+margin-right: 15px;
+}
+
+.social-links a {
+color: #fff;
+transition: color 0.3s;
+}
+
+.social-links a:hover {
+color: #FFD700; /* اللون الذهبي عند التمرير */
+}
+
+/* جعل الفوتر متجاوب */
+@media (max-width: 576px) {
+.footer h5 {
+font-size: 16px;
+}
+
+.social-links li {
+margin-right: 10px;
+}
+}
